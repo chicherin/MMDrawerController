@@ -92,7 +92,7 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
     [super layoutSubviews];
     
     if (self.layer.shadowOpacity > 0) {
-        self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds];
+        self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
     }
 }
 
